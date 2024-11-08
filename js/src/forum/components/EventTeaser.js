@@ -44,7 +44,7 @@ export default class EventTeaser extends Modal {
                   {this.title()}
                 </h3>
               </div>
-              <div className="fa-pull-right">{avatar(this.attrs.event.user())}</div>
+              {/*<div className="fa-pull-right">{avatar(this.attrs.event.user())}</div>*/}
               <div style="clear:both"></div>
             </div>
 

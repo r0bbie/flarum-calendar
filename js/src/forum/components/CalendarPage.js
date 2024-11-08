@@ -98,7 +98,7 @@ export default class CalendarPage extends Page {
     const calendar = new FullCalendar.Calendar(calendarEl, {
       locale: app.translator.getLocale(), // the initial locale
       headerToolbar: { center: 'dayGridMonth,listYearFromToday' }, // buttons for switching between views
-      initialView: 'dayGridMonth',
+      initialView: 'listYearFromToday',
       views: {
         listYearFromToday: {
           type: 'list',
@@ -113,7 +113,21 @@ export default class CalendarPage extends Page {
             return { start: startDate, end: endDate };
           },
           listDaySideFormat: { weekday: 'long' }, // day-of-week is nice-to-have
+          eventTimeFormat: {
+            hour: undefined,
+            minute: undefined
+          },
+          displayEventTime: false,
+          displayEventEnd: false
         },
+        dayGridMonth: {
+          eventTimeFormat: {
+            hour: undefined,
+            minute: undefined
+          },
+          displayEventTime: false,
+          displayEventEnd: false
+        }
       },
       eventClick: async function (info) {
         info.jsEvent.preventDefault();
