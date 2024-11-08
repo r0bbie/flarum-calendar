@@ -1,5 +1,5 @@
 {
-  "name": "webbinaro/flarum-calendar",
+  "name": "r0bbie/flarum-calendar",
   "description": "Adds a calendar of events created by users",
   "keywords": [
     "flarum",
@@ -31,6 +31,11 @@
     {
       "name": "Rafael Horvat",
       "email": "rafael.horvat@icloud.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Robbie Cargill",
+      "email": "contact@robbiecargill.com",
       "role": "Developer"
     }
   ],
